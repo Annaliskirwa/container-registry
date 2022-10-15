@@ -14,7 +14,7 @@ jobs:
           password: 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
       - name: Maven
         run: |
-          mvn -B package --file pom.xm
+          mvn package
       - name: Build the hello-docker Docker image
         run: |
           docker build . --tag ghcr.io/annaliskirwa/hello-docker-gcr-demo:latest
@@ -27,4 +27,4 @@ jobs:
           oc project marynjenga910-dev
       - name: Deploy deployment files
         run: |
-          oc apply -f /ocp -n marynjenga910-dev
+          oc apply -f /home/runner/work/container-registry/container-registry/ocp -n marynjenga910-dev
