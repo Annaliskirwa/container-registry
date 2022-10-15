@@ -1,0 +1,18 @@
+name: publish
+on: [push]
+jobs:
+publish-hello-docker-image:
+runs-on: ubuntu-latest
+steps:
+  - uses: actions/checkout@v2
+  - name: Login to GitHub Container Registry
+uses: docker/login-action@v1
+with:
+registry: ghcr.io
+username: Annaliskirwa
+password: Kirwa9431
+  - name: Build the container registry example Docker image
+run: |
+  docker build . --tag ghcr.io/Annaliskirwa/hello-docker-gcr-demo:latest
+  docker run ghcr.io/Annaliskirwa/hello-docker-gcr-demo:latest
+  docker push ghcr.io/Annaliskirwa/hello-docker-gcr-dem
