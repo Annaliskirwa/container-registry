@@ -14,5 +14,5 @@ jobs:
           password: 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
       - name: Build the hello-docker Docker image
         run: |
-          docker build . --tag ghcr.io/Annaliskirwa/hello-docker-gcr-demo:latest
-          docker push ghcr.io/Annaliskirwa/hello-docker-gcr-demo:latest
+          docker build . --tag ghcr.io/annaliskirwa/hello-docker-gcr-demo:latest
+          docker push ghcr.io/annaliskirwa/hello-docker-gcr-demo:latest
