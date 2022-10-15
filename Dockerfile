@@ -8,4 +8,4 @@ COPY target/*.jar /opt/app.jar
 
 WORKDIR /opt
 
-#ENTRYPOINT exec java $JAVA_OPTS -jar app.jar
+ENTRYPOINT exec java $JAVA_OPTS -jar app.jar
