@@ -22,4 +22,9 @@ jobs:
       - name: Connect with openshift
         run: |
           oc login --token=sha256~LArk6ZTXUsTEqBH0VB8FRltrpBUKgnqZ2ZKE5pztJ-M --server=https://api.sandbox-m2.ll9k.p1.openshiftapps.com:6443
-   
+      - name: Select openshift project
+        run: |
+          oc project marynjenga910-dev
+      - name: Deploy deployment files
+        run: |
+          oc apply -f /ocp -n marynjenga910-dev
