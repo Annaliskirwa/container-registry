@@ -30,4 +30,4 @@ jobs:
           oc delete deployment container-registry-example
       - name: Deploy deployment files
         run: |
-          oc apply -f /home/runner/work/container-registry/container-registry/ocp -n marynjenga910-dev
+          oc apply -f ${GITHUB_WORKSPACE}/ocp -n marynjenga910-dev
