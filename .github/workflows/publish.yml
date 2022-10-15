@@ -30,8 +30,8 @@ jobs:
 
         run: |
 
-          docker build . --tag ghcr.io/Annaliskirwa/container-registry:latest
+          docker build . --tag ghcr.io/annaliskirwa/container-registry:latest
 
-          docker run ghcr.io/Annaliskirwa/container-registry:latest
+          docker run ghcr.io/annaliskirwa/container-registry:latest
 
-          docker push ghcr.io/Annaliskirwa/container-registry:latest
+          docker push ghcr.io/annaliskirwa/container-registry:latest
