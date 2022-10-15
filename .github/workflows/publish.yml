@@ -11,7 +11,7 @@ with:
 registry: ghcr.io
 username: Annaliskirwa
 password: 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
-  - name: Build the container registry Docker image
+- name: Build the hello-docker Docker image
 run: |
   docker build . --tag ghcr.io/Annaliskirwa/hello-docker-gcr-demo:latest
   docker run ghcr.io/Annaliskirwa/hello-docker-gcr-demo:latest
