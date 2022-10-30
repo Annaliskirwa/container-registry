@@ -11,7 +11,7 @@ jobs:
         with:
           registry: ghcr.io
           username: Annaliskirwa
-          password: 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
+          password: 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
       - name: Maven
         run: |
           mvn package
@@ -21,7 +21,7 @@ jobs:
           docker push ghcr.io/annaliskirwa/hello-docker-gcr-demo:latest
       - name: Connect with openshift
         run: |
-          oc login --token=sha256~LArk6ZTXUsTEqBH0VB8FRltrpBUKgnqZ2ZKE5pztJ-M --server=https://api.sandbox-m2.ll9k.p1.openshiftapps.com:6443
+          oc login --token=sha256~E1XnlMsTzA2GOIH8DoqWSc4sua1CMslCcA2_sX_MWe0 --server=https://api.sandbox-m2.ll9k.p1.openshiftapps.com:6443
       - name: Select openshift project
         run: |
           oc project marynjenga910-dev
