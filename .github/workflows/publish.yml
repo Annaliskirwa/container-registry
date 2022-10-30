@@ -11,7 +11,7 @@ jobs:
         with:
           registry: ghcr.io
           username: Annaliskirwa
-          password: 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
+          password: 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
       - name: Maven
         run: |
           mvn package
