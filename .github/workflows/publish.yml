@@ -25,9 +25,9 @@ jobs:
       - name: Select openshift project
         run: |
           oc project marynjenga910-dev
-#      - name: Delete deployment
-#        run: |
-#          oc delete deployment container-registry-example
+      - name: Delete deployment
+        run: |
+          oc delete deployment container-registry-example
       - name: Deploy deployment files
         run: |
           oc apply -f ${GITHUB_WORKSPACE}/ocp -n marynjenga910-dev
